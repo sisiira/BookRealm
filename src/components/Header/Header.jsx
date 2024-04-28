@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import Search from '../Search/Search';
 import './Header.css';
+import About from '../../Pages/About/About';
 
 const Header = () => {
   return (
@@ -9,11 +10,13 @@ const Header = () => {
       <header className='header'>
         <Navbar />
         <div className='header-content flex flex-c text-center text-white'>
-          <h2 className='header-title text-capitalize'>Find your book of choice</h2><br />
-          <p className='header-text fs-18 fw-3'>Welcome to Mangow, your ultimate destination for manga enthusiasts. Dive into a world where stories never end and adventures await. Join us in exploring the wonders of manga today.</p>
+          <h2 className='header-title text-capitalize'>BookRealm</h2><br />
+          <p className='header-text fs-18 fw-3'>
+Welcome to BookRealm, your premier destination for book lovers. Immerse yourself in a universe where narratives unfold and journeys begin. Explore the boundless wonders of literature with us today. Join our community and discover your next great read at BookRealm.</p>
           <Search />
         </div>
       </header>
+      <About />
     </div>
   )
 }

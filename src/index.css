@@ -16,6 +16,9 @@ code {
 
 :root {
   --purple-color: #6c5ce7;
+  --yellow-color: #b89228;
+  --pink-color: #c98893;
+  --blue-color: #0984e3;
   --white-color: #fff;
   --black-color: #000;
   --gray-color: #f5f6fa;
@@ -74,7 +77,7 @@ input {
 /* Background */
 
 .bg-purple {
-  background-color: var(--purple);
+  background-color: var(--yellow);
 }
 
 .bg-white {
@@ -100,7 +103,7 @@ input {
 }
 
 .text-purple {
-  color: var(--purple-color);
+  color: var(--yellow-color);
 }
 
 .text-dark-gray {

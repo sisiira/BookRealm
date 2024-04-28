@@ -1,12 +1,14 @@
 .header-content {
     min-height: 75vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('../../images/library.jpeg') center/cover no-repeat;
+        url('../../images/d3.jpg')  no-repeat;
         flex-direction: column;
 }
 
 .header-title {
-    font-size: 4.2rem;
+    font-size: 2.8rem;
+    animation: slideIn 2s ease-in-out;
+    color: #b89228;
 }
 
 .header-text {
@@ -14,4 +16,14 @@
     margin-bottom: 2.8rem;
     opacity: 0.8;
     max-width: 770px;
+}
+
+.header p{
+    font-size: 1rem;
+}
+
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
 }

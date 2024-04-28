@@ -1,15 +1,18 @@
 .navbar {
-    padding: 1.8rem 0;
+    padding: 1rem 0;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05)  0px 4px 6px -2px; 
 }
 
 .navbar-brand {
     width: 90px;
+    justify-content: center;
 }
 
 .navbar-brand span {
-    margin-left: 2rem;
+    font-size: 1rem;
+    color: var(--yellow-color);
+    font-family: 700;
 }
 
 .brand-and-toggler {
@@ -65,5 +68,25 @@
         background-color: transparent;
         transform: translateX(0);
         justify-content: flex-end;
+    }
+    
+    .navbar-toggler-btn {
+        display: none;
+    }
+
+    .nav-item {
+        margin-bottom: 0;
+        margin-left: 2.8rem;
+    }
+
+    .nav-link {
+        color: var(--black-color);
+        font-size: 0.8rem;
+        font-family: 500!important;
+        opacity: 0.8;
+    }
+
+    .navbar-nav {
+        display: flex;
     }
 }
