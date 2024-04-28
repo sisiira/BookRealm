@@ -56,7 +56,7 @@
 }
 
 .nav-link:hover {
-    color: var(--purple-color);
+    color: var(--yellow-color);
 }
 
 @media screen and (min-width: 992px) {

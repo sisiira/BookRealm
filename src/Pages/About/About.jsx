@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './About.css';
 import aboutImg from '../../images/about-img.jpg';
 
@@ -7,6 +8,7 @@ const About = () => {
     <section className='about'>
       <div className='container'>
         <div className='section-title'>
+          <Link to="/" className="home-button fs-12 fw-7"></Link>
           <h2>About</h2>
         </div>
 
@@ -24,4 +26,4 @@ const About = () => {
   )
 }
 
-export default About
+export default About;

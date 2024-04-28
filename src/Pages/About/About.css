@@ -10,6 +10,10 @@
     margin: 1rem 0;
 }
 
+.home-button:hover{
+   color: var(--yellow-color);
+}
+
 .about-img img{
     max-width: 520px;
 }

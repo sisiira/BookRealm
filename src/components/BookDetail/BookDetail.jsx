@@ -49,9 +49,9 @@ const navigate = useNavigate();
   return (
     <section className='book-details'>
       <div className='container'>
-        <button type='button' className='flex flex-c back-btn' onClick={() => navigate('/book')}>
+        <button type='button' className='flex flex-c back-btn' onClick={() => navigate('/book')} style={{position: 'absolute', top: '90px', right: '1340px'}}>
           <FaArrowLeft size={22} />
-          <span className='fs-18 fw-6'>Return</span>
+          <span className='fs-15'>Return</span>
         </button>
         
         <div className='book-details-content grid'>
@@ -76,6 +76,10 @@ const navigate = useNavigate();
             <div className='book-details-item'>
               <span className='fw-6'>Subjects: </span>
               <span>{book?.subjects}</span>
+              </div>
+              <div className='book-details-item'>
+                <span className='fw-6'>Wikipedia: </span>
+                 <a href={`https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(book?.title)}`} target="_blank" rel="noopener noreferrer">Search</a>
               </div>
           </div>
         </div>

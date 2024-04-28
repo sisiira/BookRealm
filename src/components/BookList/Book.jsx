@@ -16,17 +16,17 @@ const Book = (book) => {
         </Link>
 
         <div className='book-item-info-item author fs-12'>
-          <span className='text-capitalize fw-7'>Author: </span>
+          <span className='text-capitalize fw-5'>Author: </span>
           <span>{book.author}</span>
         </div>
 
         <div className='book-item-info-item edition-count fs-12'>
-          <span className='text-capitalize fw-7'>Edition Count: </span>
+          <span className='text-capitalize fw-5'>Edition Count: </span>
           <span>{book.edition_count}</span>
         </div>
 
         <div className='book-item-info-item first-publish fs-12'>
-          <span className='text-capitalize fw-7'>First Publish Year: </span>
+          <span className='text-capitalize fw-5'>First Publish Year: </span>
           <span>{book.first_publish_year}</span>
         </div>
       </div>

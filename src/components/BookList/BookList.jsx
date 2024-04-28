@@ -4,8 +4,9 @@ import Book from '../BookList/Book';
 import  Loading  from '../Loader/Loader';
 import coverImg from '../../images/missing.png';
 import './BookList.css'
+import { Link } from 'react-router-dom';
 
-//https://covers.openlibrary.org/b/id/240727-S.jpg
+
 
 const BookList = () => {
   const {loading, books, resultTitle} = useGlobalContext();
@@ -25,6 +26,7 @@ const BookList = () => {
     <section className='booklist'>
       <div className='container'>
         <div className='section-title'>
+          <Link to="/" className='home-button fs-12 fw-7'>Home</Link>
           <h2>{resultTitle}</h2>
         </div>
         <div className='booklist-content grid'>
@@ -32,8 +34,7 @@ const BookList = () => {
             return (
               <Book key={index} {...item} />  
             )
-           })
-          }
+           })}
         </div>
       </div>
     </section>

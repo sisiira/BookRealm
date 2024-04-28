@@ -16,7 +16,7 @@ Welcome to BookRealm, your premier destination for book lovers. Immerse yourself
           <Search />
         </div>
       </header>
-      <About />
+      <About  />
     </div>
   )
 }
